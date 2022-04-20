@@ -34,7 +34,11 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
-body._lock {
+body._lock-popup {
+  overflow: hidden;
+}
+
+body._lock-menu {
   overflow: hidden;
 }
 
