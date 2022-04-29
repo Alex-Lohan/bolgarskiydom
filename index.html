@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220420182638"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220420182638"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220420182638">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220429172557"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220429172557"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220429172557">
     
 </head>
 <body>
@@ -31,17 +31,23 @@
                         <nav class="header-menu">
                             <div class="header-menu__container">
                                 <ul class="header-menu__list">
-                                    <li class="header-menu__item">
-                                        <a class="header-menu__link" href="#">Отзывы</a>
+                                    <li class="header-menu__item" hidden>
+                                        <a class="header-menu__link" data-goto=".section_01" href="#">Главная</a>
                                     </li>
                                     <li class="header-menu__item">
-                                        <a class="header-menu__link" href="#">Портфолио</a>
+                                        <a class="header-menu__link" data-goto=".section_02" href="#">Отзывы</a>
                                     </li>
                                     <li class="header-menu__item">
-                                        <a class="header-menu__link" href="#">Этапы</a>
+                                        <a class="header-menu__link" data-goto=".section_03" href="#">Портфолио</a>
                                     </li>
                                     <li class="header-menu__item">
-                                        <a class="header-menu__link" href="#">F.A.Q.</a>
+                                        <a class="header-menu__link" data-goto=".section_04" href="#">Этапы</a>
+                                    </li>
+                                    <li class="header-menu__item" hidden>
+                                        <a class="header-menu__link" data-goto=".section_05" href="#">Оценка</a>
+                                    </li>
+                                    <li class="header-menu__item">
+                                        <a class="header-menu__link" data-goto=".section_06" href="#">F.A.Q.</a>
                                     </li>
                                 </ul>
                                 <a class="header__btn _btn _popup-link" href="#popup-call">Заказать звонок</a>
@@ -105,7 +111,7 @@
             </div>
         </header>
         <main class="page">
-            <section class="main">
+            <section class="main section section_01">
                 <div class="main__container _container">
                     <div class="main__row">
                         <div class="main__col">
@@ -170,7 +176,7 @@
                     </div>
                 </div>
             </section>
-            <section class="reviews">
+            <section class="reviews section section_02">
                 <div class="reviews__container _container">
                     <h2 class="reviews__title title-h2">Отзывы продавцов</h2>
                     <div class="reviews__reviews-slider reviews-slider swiper-container">
@@ -186,9 +192,9 @@
                                             <div class="review-profile__region">Регион: Святой Влас</div>
                                         </div>
                                     </div>
-                                    <p class="card-review__description">Добрый день, меня зовут Евгения. Я нахожусь в Болгарии, в Святом Власе. У меня здесь была квартира, и я приехала ее продать. Я обратилась с этой целью к фирме, которая называется Болгарский Дом. Меня прекрасно обслуживали менеджеры этой фирмы... <a href="#">показать всё</a></p>
+                                    <p class="card-review__description">Добрый день, меня зовут Евгения. Я нахожусь в Болгарии, в Святом Власе. У меня здесь была квартира, и я приехала ее продать. Я обратилась с этой целью к фирме, которая называется Болгарский Дом. Меня прекрасно обслуживали менеджеры этой фирмы<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                     <a class="card-review__video review-video _popup-link" href="#popup-video">
-                                        <div class="review-video__image mask-gradient">
+                                        <div class="review-video__image">
                                             <picture><source srcset="img/reviews/reviews-slider/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/01.jpg" alt="image"></picture>
                                         </div>
                                         <div class="review-video__text">Смотреть<br>видео отзыва</div>
@@ -206,7 +212,7 @@
                                             <div class="review-profile__region">Регион: Святой Влас</div>
                                         </div>
                                     </div>
-                                    <p class="card-review__description">Добрый день, друзья. Я хочу сказать несколько добрых слов по поводу моего сотрудничества с агентством недвижимости БолгарскийДом и лично с Анной Писаревой. Мы познакомились, я попросил об услуге продажи квартиры. Это заняло некоторое время, но... <a href="#">показать всё</a></p>   
+                                    <p class="card-review__description">Добрый день, друзья. Я хочу сказать несколько добрых слов по поводу моего сотрудничества с агентством недвижимости БолгарскийДом и лично с Анной Писаревой. Мы познакомились, я попросил об услуге продажи квартиры. Это заняло некоторое время, но<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                     <a class="card-review__gallery review-gallery" href="#" data-fancybox-trigger="gallery-1">
                                         <div class="review-gallery__images">
                                             <picture><source srcset="img/reviews/reviews-slider/gallery-1/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-1/01.jpg" data-fancybox="gallery-1" alt="image"></picture>
@@ -215,7 +221,7 @@
                                         <div class="review-gallery__image review-gallery__image_01">
                                             <picture><source srcset="img/reviews/reviews-slider/00-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-01.jpg" alt="image"></picture>
                                         </div>
-                                        <div class="review-gallery__image review-gallery__image_02 mask-gradient">
+                                        <div class="review-gallery__image review-gallery__image_02">
                                             <picture><source srcset="img/reviews/reviews-slider/00-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-02.jpg" alt="image"></picture>
                                         </div>
     
@@ -234,7 +240,7 @@
                                             <div class="review-profile__region">Регион: Солнечный берег</div>
                                         </div>
                                     </div>
-                                    <p class="card-review__description">Добрый день. Хотела бы поделиться обратной связью о своем сотрудничестве с агентством недвижимости «Болгарский дом». Как и у многих собственников, когда появилась необходимость продать апартаменты в Болгарии, мы в первую очередь обратились к застр... <a href="#">показать всё</a></p>
+                                    <p class="card-review__description">Добрый день. Хотела бы поделиться обратной связью о своем сотрудничестве с агентством недвижимости «Болгарский дом». Как и у многих собственников, когда появилась необходимость продать апартаменты в Болгарии, мы в первую очередь обратились к застр<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                     <a class="card-review__gallery review-gallery" href="#" data-fancybox-trigger="gallery-2">
                                         <div class="review-gallery__images">
                                             <picture><source srcset="img/reviews/reviews-slider/gallery-1/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-1/01.jpg" data-fancybox="gallery-2" alt="image"></picture>
@@ -243,7 +249,7 @@
                                         <div class="review-gallery__image review-gallery__image_01">
                                             <picture><source srcset="img/reviews/reviews-slider/00-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-01.jpg" alt="image"></picture>
                                         </div>
-                                        <div class="review-gallery__image review-gallery__image_02 mask-gradient">
+                                        <div class="review-gallery__image review-gallery__image_02">
                                             <picture><source srcset="img/reviews/reviews-slider/00-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-02.jpg" alt="image"></picture>
                                         </div>
     
@@ -336,7 +342,7 @@
                                                         <div class="rating-profile__date">21 февраля 2022</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Выражаем огромную благодарность Агенству Болгарский дом!! А особенно менеджеру - консультанту Анне Писаревой. С Анной стали общаться за долго до покупки жилья, получили профессиональную консультацию  и ответы на все наши вопросы ( а их ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Выражаем огромную благодарность Агенству Болгарский дом!! А особенно менеджеру - консультанту Анне Писаревой. С Анной стали общаться за долго до покупки жилья, получили профессиональную консультацию  и ответы на все наши вопросы ( а их<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                         <div class="ratings-slider-1__slide swiper-slide">
@@ -363,7 +369,7 @@
                                                         <div class="rating-profile__date">23 ноября 2021</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Огромное спасибо коллективу Болгарского Дома за оказанную помощь в продаже недвижимости. Работа проделана профессионально. Особенно благодарю Тараса, Алису, Анну. Желаю коллективу : Так держать!  Всем желающим приобрести или продать недвижимость ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Огромное спасибо коллективу Болгарского Дома за оказанную помощь в продаже недвижимости. Работа проделана профессионально. Особенно благодарю Тараса, Алису, Анну. Желаю коллективу : Так держать!  Всем желающим приобрести или продать недвижимость<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                         <div class="ratings-slider-1__slide swiper-slide">
@@ -390,7 +396,7 @@
                                                         <div class="rating-profile__date">20 октября 2021</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Большое спасибо команде менеджеров агентства недвижимости "Болгарский дом " за качественную и быструю работу. Особая благодарность Алисе и Ане. Девочки были постоянно на связи, помогали, консультировали. Очень быстро нашли покупателя.  Удачи вам в ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Большое спасибо команде менеджеров агентства недвижимости "Болгарский дом " за качественную и быструю работу. Особая благодарность Алисе и Ане. Девочки были постоянно на связи, помогали, консультировали. Очень быстро нашли покупателя.  Удачи вам в<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                     </div>
@@ -427,7 +433,7 @@
                                                         <div class="rating-profile__date">21 февраля 2022</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Выражаем огромную благодарность Агенству Болгарский дом!! А особенно менеджеру - консультанту Анне Писаревой. С Анной стали общаться за долго до покупки жилья, получили профессиональную консультацию  и ответы на все наши вопросы ( а их ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Выражаем огромную благодарность Агенству Болгарский дом!! А особенно менеджеру - консультанту Анне Писаревой. С Анной стали общаться за долго до покупки жилья, получили профессиональную консультацию  и ответы на все наши вопросы ( а их<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                         <div class="ratings-slider-2__slide swiper-slide">
@@ -454,7 +460,7 @@
                                                         <div class="rating-profile__date">23 ноября 2021</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Огромное спасибо коллективу Болгарского Дома за оказанную помощь в продаже недвижимости. Работа проделана профессионально. Особенно благодарю Тараса, Алису, Анну. Желаю коллективу : Так держать!  Всем желающим приобрести или продать недвижимость ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Огромное спасибо коллективу Болгарского Дома за оказанную помощь в продаже недвижимости. Работа проделана профессионально. Особенно благодарю Тараса, Алису, Анну. Желаю коллективу : Так держать!  Всем желающим приобрести или продать недвижимость<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                         <div class="ratings-slider-2__slide swiper-slide">
@@ -481,7 +487,7 @@
                                                         <div class="rating-profile__date">20 октября 2021</div>
                                                     </div>
                                                 </div>
-                                                <p class="card-rating__description">Большое спасибо команде менеджеров агентства недвижимости "Болгарский дом " за качественную и быструю работу. Особая благодарность Алисе и Ане. Девочки были постоянно на связи, помогали, консультировали. Очень быстро нашли покупателя.  Удачи вам в ... <a href="#">показать всё</a></p>
+                                                <p class="card-rating__description">Большое спасибо команде менеджеров агентства недвижимости "Болгарский дом " за качественную и быструю работу. Особая благодарность Алисе и Ане. Девочки были постоянно на связи, помогали, консультировали. Очень быстро нашли покупателя.  Удачи вам в<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
                                             </article>
                                         </div>
                                     </div>
@@ -495,7 +501,7 @@
                     </div>
                 </div>
             </section>
-            <section class="apartments">
+            <section class="apartments section section_03">
                 <div class="apartments__container _container">
                     <h2 class="apartments__title title-h2">Последние проданные квартиры</h2>
                     <div class="apartments__apartments-slider apartments-slider swiper-container">
@@ -559,7 +565,7 @@
                     </div>
                 </div>
             </section>
-            <section class="deal">
+            <section class="deal section section_04">
                 <div class="deal__container _container">
                     <h2 class="deal__title title-h2">Как проходит сделка</h2>
                     <p class="deal__description">В 2020-2022 году 90% сделок по продаже квартир в Болгарии наше агентство осуществило дистанционно, без личного присутствия продавца. Дистанционные сделки проходят в строгом соответствии с законодательством ЕС, поэтому на 100% безопасны.</p>
@@ -661,7 +667,7 @@
                     </div>
                 </div>
             </section>
-            <section class="grade">
+            <section class="grade section section_05">
                 <div class="grade__container _container">
                     <div class="grade__body">
                         <div class="grade__image">
@@ -680,7 +686,7 @@
                     </div>
                 </div>
             </section>
-            <section class="questions">
+            <section class="questions section section_06">
                 <div class="questions__container _container">
                     <h2 class="questions__title title-h2">Популярные вопросы</h2>
                     <div class="questions-spoiler" data-spoilers data-spoiler-one>
@@ -763,8 +769,8 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220420182638"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220420182638"></script>
-    <script src="js/script.min.js?_v=20220420182638"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220429172557"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220429172557"></script>
+    <script src="js/script.min.js?_v=20220429172557"></script>
 </body>
 </html>
