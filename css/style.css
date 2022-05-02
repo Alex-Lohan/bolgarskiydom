@@ -2590,7 +2590,7 @@ textarea._input {
     background: linear-gradient(0deg, rgba(100, 85, 136, 0.8), rgba(100, 85, 136, 0.8));
   }
 
-  .review-gallery:hover .review-gallery__image_02::before {
+  .review-gallery:hover .review-gallery__image::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -2602,7 +2602,7 @@ textarea._input {
     background: linear-gradient(0deg, rgba(100, 85, 136, 0.6), rgba(100, 85, 136, 0.6));
   }
 
-  .review-gallery:hover .review-gallery__image_02::after {
+  .review-gallery:hover .review-gallery__image::after {
     content: "";
     position: absolute;
     top: 50%;
