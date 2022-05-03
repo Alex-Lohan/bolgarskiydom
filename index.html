@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link rel="shortcut icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220502151732"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220502151732"/>
-    <link rel="stylesheet" href="css/style.min.css?_v=20220502151732">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20220503105401"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css?_v=20220503105401"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220503105401">
     
 </head>
 <body>
@@ -193,12 +193,12 @@
                                         </div>
                                     </div>
                                     <p class="card-review__description">Добрый день, меня зовут Евгения. Я нахожусь в Болгарии, в Святом Власе. У меня здесь была квартира, и я приехала ее продать. Я обратилась с этой целью к фирме, которая называется Болгарский Дом. Меня прекрасно обслуживали менеджеры этой фирмы<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
-                                    <a class="card-review__video review-video _popup-link" href="#popup-video">
-                                        <div class="review-video__image">
+                                    <div class="card-review__video review-video">
+                                        <a class="review-video__image _popup-link" href="#popup-video">
                                             <picture><source srcset="img/reviews/reviews-slider/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/01.jpg" alt="image"></picture>
-                                        </div>
-                                        <div class="review-video__text">Смотреть<br>видео отзыва</div>
-                                    </a>
+                                        </a>
+                                        <a class="review-video__text _popup-link" href="#popup-video">Смотреть<br>видео отзыва</a>
+                                    </div>
                                 </article>
                             </div>
                             <div class="reviews-slider__slide swiper-slide">
@@ -213,20 +213,15 @@
                                         </div>
                                     </div>
                                     <p class="card-review__description">Добрый день, друзья. Я хочу сказать несколько добрых слов по поводу моего сотрудничества с агентством недвижимости БолгарскийДом и лично с Анной Писаревой. Мы познакомились, я попросил об услуге продажи квартиры. Это заняло некоторое время, но<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
-                                    <a class="card-review__gallery review-gallery" href="#" data-fancybox-trigger="gallery-1">
-                                        <div class="review-gallery__images">
-                                            <picture><source srcset="img/reviews/reviews-slider/gallery-1/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-1/01.jpg" data-fancybox="gallery-1" alt="image"></picture>
-                                            <picture><source srcset="img/reviews/reviews-slider/gallery-2/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-2/01.jpg" data-fancybox="gallery-1" alt="image"></picture>
-                                        </div>
-                                        <div class="review-gallery__image">
-                                            <picture><source srcset="img/reviews/reviews-slider/00-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-01.jpg" alt="image"></picture>
-                                        </div>
-                                        <div class="review-gallery__image">
-                                            <picture><source srcset="img/reviews/reviews-slider/00-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-02.jpg" alt="image"></picture>
-                                        </div>
-    
-                                        <div class="review-gallery__text">Смотреть<br>фото отзыва</div>
-                                    </a>
+                                    <div class="card-review__gallery review-gallery">
+                                        <a class="review-gallery__image" href="img/reviews/reviews-slider/gallery-1/01.jpg" data-fancybox="gallery-1">
+                                            <picture><source srcset="img/reviews/reviews-slider/02-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/02-01.jpg" alt="image"></picture>
+                                        </a>
+                                        <a class="review-gallery__image" href="img/reviews/reviews-slider/gallery-1/02.jpg" data-fancybox="gallery-1">
+                                            <picture><source srcset="img/reviews/reviews-slider/02-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/02-02.jpg" alt="image"></picture>
+                                        </a>
+                                        <div class="review-gallery__text" data-fancybox-trigger="gallery-1">Смотреть<br>фото отзыва</div>
+                                    </div>
                                 </article>
                             </div>
                             <div class="reviews-slider__slide swiper-slide">
@@ -241,20 +236,15 @@
                                         </div>
                                     </div>
                                     <p class="card-review__description">Добрый день. Хотела бы поделиться обратной связью о своем сотрудничестве с агентством недвижимости «Болгарский дом». Как и у многих собственников, когда появилась необходимость продать апартаменты в Болгарии, мы в первую очередь обратились к застр<span class="more-dots">...</span> <span class="more-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos consequuntur, facere a sint repudiandae molestiae nulla quae totam quidem fugit voluptatibus tempora nemo eligendi rerum, vero, sit nostrum! Consectetur, velit!</span> <span class="more-btn">показать всё</span></p>
-                                    <a class="card-review__gallery review-gallery" href="#" data-fancybox-trigger="gallery-2">
-                                        <div class="review-gallery__images">
-                                            <picture><source srcset="img/reviews/reviews-slider/gallery-1/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-1/01.jpg" data-fancybox="gallery-2" alt="image"></picture>
-                                            <picture><source srcset="img/reviews/reviews-slider/gallery-2/01.webp" type="image/webp"><img src="img/reviews/reviews-slider/gallery-2/01.jpg" data-fancybox="gallery-2" alt="image"></picture>
-                                        </div>
-                                        <div class="review-gallery__image">
-                                            <picture><source srcset="img/reviews/reviews-slider/00-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-01.jpg" alt="image"></picture>
-                                        </div>
-                                        <div class="review-gallery__image">
-                                            <picture><source srcset="img/reviews/reviews-slider/00-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/00-02.jpg" alt="image"></picture>
-                                        </div>
-    
-                                        <div class="review-gallery__text">Смотреть<br>фото отзыва</div>
-                                    </a>
+                                    <div class="card-review__gallery review-gallery">
+                                        <a class="review-gallery__image" href="img/reviews/reviews-slider/gallery-2/01.jpg" data-fancybox="gallery-2">
+                                            <picture><source srcset="img/reviews/reviews-slider/02-01.webp" type="image/webp"><img src="img/reviews/reviews-slider/02-01.jpg" alt="image"></picture>
+                                        </a>
+                                        <a class="review-gallery__image" href="img/reviews/reviews-slider/gallery-2/02.jpg" data-fancybox="gallery-2">
+                                            <picture><source srcset="img/reviews/reviews-slider/02-02.webp" type="image/webp"><img src="img/reviews/reviews-slider/02-02.jpg" alt="image"></picture>
+                                        </a>
+                                        <div class="review-gallery__text" data-fancybox-trigger="gallery-2">Смотреть<br>фото отзыва</div>
+                                    </div>
                                 </article>
                             </div>
                         </div>
@@ -769,8 +759,8 @@
         </div>
     </div>
 
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220502151732"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220502151732"></script>
-    <script src="js/script.min.js?_v=20220502151732"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js?_v=20220503105401"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js?_v=20220503105401"></script>
+    <script src="js/script.min.js?_v=20220503105401"></script>
 </body>
 </html>
